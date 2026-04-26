@@ -10,8 +10,10 @@ function getRecorder() {
 export function startRecording() {
   return new Promise((resolve, reject) => {
     const rm = getRecorder()
-    rm.onStop(res => resolve(res.tempFilePath))
-    rm.onError(e => reject(new Error(e.errMsg || 'Recording failed')))
+    const onStop = res => { rm.offStop(onStop); rm.offError(onError); resolve(res.tempFilePath) }
+    const onError = e => { rm.offStop(onStop); rm.offError(onError); reject(new Error(e.errMsg || 'Recording failed')) }
+    rm.onStop(onStop)
+    rm.onError(onError)
     rm.start({ format: 'mp3', sampleRate: 16000, numberOfChannels: 1, encodeBitRate: 48000 })
   })
 }
