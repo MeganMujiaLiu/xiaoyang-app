@@ -58,12 +58,41 @@
       </view>
     </scroll-view>
 
-    <!-- Placeholder controls (replaced in Task 8) -->
-    <view class="controls-placeholder">
+    <!-- Bottom toolbar -->
+    <view class="toolbar">
+      <view class="tool-btn" @click="cycleSpeed">
+        <text class="tool-icon">⏱</text>
+        <text class="tool-label">{{ speedLabel }}</text>
+      </view>
+      <view class="tool-btn" @click="cycleOrderMode">
+        <text class="tool-icon">≡</text>
+        <text class="tool-label">{{ orderModeLabel }}</text>
+      </view>
+      <view class="tool-btn">
+        <text class="tool-icon">👆</text>
+        <text class="tool-label">点读</text>
+      </view>
+      <view class="tool-btn" @click="cycleRepeat">
+        <text class="tool-icon">🔁</text>
+        <text class="tool-label">{{ repeatLabel }}</text>
+      </view>
+      <view class="tool-btn" @click="cycleDisplayMode">
+        <text class="tool-icon">文</text>
+        <text class="tool-label">{{ displayModeLabel }}</text>
+      </view>
+      <view class="tool-btn" @click="goToShadowing">
+        <text class="tool-icon">🎤</text>
+        <text class="tool-label">跟读</text>
+      </view>
+    </view>
+
+    <!-- Playback controls -->
+    <view class="playback-bar safe-area-bottom">
       <text class="ctrl-btn" @click="prevLine">⏮</text>
-      <text class="ctrl-btn large" @click="togglePlay">{{ playing ? '⏸' : '▶' }}</text>
+      <view class="play-btn" @click="togglePlay">
+        <text class="play-icon">{{ playing ? '⏸' : '▶' }}</text>
+      </view>
       <text class="ctrl-btn" @click="nextLine">⏭</text>
-      <text class="mode-btn" @click="cycleDisplayMode">{{ displayModeLabel }}</text>
     </view>
   </view>
 </template>
@@ -93,6 +122,36 @@ function cycleDisplayMode() {
   displayModeIndex.value = (displayModeIndex.value + 1) % DISPLAY_MODES.length
 }
 
+// Speed — playbackRate ref already declared above; just add speedIndex and cycleSpeed
+const SPEEDS = [0.75, 1.0, 1.25, 1.5]
+const speedIndex = ref(1) // index 1 = 1.0x default
+function cycleSpeed() {
+  speedIndex.value = (speedIndex.value + 1) % SPEEDS.length
+  playbackRate.value = SPEEDS[speedIndex.value]
+}
+const speedLabel = computed(() => `${SPEEDS[speedIndex.value]}x`)
+
+// Order
+const ORDER_MODES = ['sequence', 'loop-one', 'loop-all']
+const ORDER_LABELS = ['顺序', '单句', '全文']
+const orderModeIndex = ref(0)
+const orderMode = computed(() => ORDER_MODES[orderModeIndex.value])
+const orderModeLabel = computed(() => ORDER_LABELS[orderModeIndex.value])
+function cycleOrderMode() {
+  orderModeIndex.value = (orderModeIndex.value + 1) % ORDER_MODES.length
+}
+
+// Repeat (1 = off, 2+ = repeat N times before advancing; default 2)
+const REPEAT_OPTIONS = [1, 2, 3, 5]
+const repeatIndex = ref(1) // default index 1 → repeatCount 2
+const repeatCount = computed(() => REPEAT_OPTIONS[repeatIndex.value])
+const repeatLabel = computed(() => repeatCount.value === 1 ? '复读' : `复读×${repeatCount.value}`)
+let repeatRemaining = 0
+function cycleRepeat() {
+  repeatIndex.value = (repeatIndex.value + 1) % REPEAT_OPTIONS.length
+  repeatRemaining = 0
+}
+
 let videoContext = null
 
 onLoad(options => {
@@ -119,11 +178,28 @@ function onTimeUpdate(e) {
   if (idx !== -1 && idx !== currentLineIndex.value) {
     currentLineIndex.value = idx
     scrollTarget.value = `line-${idx}`
+    repeatRemaining = repeatCount.value - 1
+  }
+  // Handle line-end for repeat and loop-one modes
+  const line = subtitleLines.value[currentLineIndex.value]
+  if (line && ms >= line.endTime - 80) {
+    if (repeatRemaining > 0) {
+      repeatRemaining--
+      videoContext.seek(line.startTime / 1000)
+      videoContext.play()
+    } else if (orderMode.value === 'loop-one') {
+      videoContext.seek(line.startTime / 1000)
+      videoContext.play()
+    }
   }
 }
 
 function onVideoEnded() {
   playing.value = false
+  if (orderMode.value === 'loop-all') {
+    videoContext.seek(0)
+    videoContext.play()
+  }
 }
 
 function togglePlay() {
@@ -151,6 +227,13 @@ function nextLine() {
 function goBack() {
   uni.navigateBack()
 }
+
+function goToShadowing() {
+  videoContext.pause()
+  uni.navigateTo({
+    url: `/pages/shadowing/index?videoId=${videoId.value}&subtitleId=${subtitleId.value}&lineIndex=${currentLineIndex.value}`
+  })
+}
 </script>
 
 <style scoped>
@@ -176,18 +259,25 @@ function goBack() {
 .line-item.active .line-en { color: #4a7eff; }
 .line-zh { display: block; font-size: 26rpx; color: #999; margin-top: 6rpx; }
 .line-item.active .line-zh { color: #7a9eff; }
-.controls-placeholder {
-  display: flex; justify-content: center; align-items: center;
-  gap: 60rpx; padding: 24rpx 0; border-top: 1rpx solid #eee; background: #fff;
-}
-.ctrl-btn { font-size: 40rpx; color: #444; }
-.ctrl-btn.large { font-size: 56rpx; }
 .blank-bars { padding: 6rpx 0; }
 .grey-bar { height: 28rpx; background: #e0e0e0; border-radius: 6rpx; margin-bottom: 10rpx; }
 .grey-bar.long { width: 80%; }
 .grey-bar.short { width: 50%; }
-.mode-btn {
-  font-size: 26rpx; background: #f0f0f0;
-  padding: 8rpx 20rpx; border-radius: 20rpx; color: #555;
+.toolbar {
+  display: flex; justify-content: space-around; align-items: center;
+  padding: 16rpx 8rpx; border-top: 1rpx solid #eee; background: #fafafa;
 }
+.tool-btn { display: flex; flex-direction: column; align-items: center; gap: 4rpx; }
+.tool-icon { font-size: 36rpx; }
+.tool-label { font-size: 20rpx; color: #666; }
+.playback-bar {
+  display: flex; justify-content: center; align-items: center;
+  gap: 80rpx; padding: 16rpx 0 20rpx; background: #fff; border-top: 1rpx solid #f0f0f0;
+}
+.ctrl-btn { font-size: 44rpx; color: #444; }
+.play-btn {
+  width: 88rpx; height: 88rpx; background: #222; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+}
+.play-icon { font-size: 36rpx; color: #fff; text-align: center; }
 </style>
