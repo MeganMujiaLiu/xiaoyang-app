@@ -43,8 +43,18 @@
         :class="['line-item', { active: i === currentLineIndex }]"
         @click="jumpToLine(i)"
       >
-        <text class="line-en">{{ line.english }}</text>
-        <text class="line-zh">{{ line.chinese }}</text>
+        <view v-if="displayMode === 'blank'" class="blank-bars">
+          <view class="grey-bar long" />
+          <view class="grey-bar short" />
+        </view>
+        <template v-else>
+          <text v-if="displayMode === 'en' || displayMode === 'bilingual'" class="line-en">
+            {{ line.english }}
+          </text>
+          <text v-if="displayMode === 'zh' || displayMode === 'bilingual'" class="line-zh">
+            {{ line.chinese }}
+          </text>
+        </template>
       </view>
     </scroll-view>
 
@@ -53,6 +63,7 @@
       <text class="ctrl-btn" @click="prevLine">⏮</text>
       <text class="ctrl-btn large" @click="togglePlay">{{ playing ? '⏸' : '▶' }}</text>
       <text class="ctrl-btn" @click="nextLine">⏭</text>
+      <text class="mode-btn" @click="cycleDisplayMode">{{ displayModeLabel }}</text>
     </view>
   </view>
 </template>
@@ -71,6 +82,16 @@ const playing = ref(false)
 const statusBarHeight = ref(0)
 const scrollTarget = ref('')
 const playbackRate = ref(1.0)
+
+const DISPLAY_MODES = ['bilingual', 'en', 'zh', 'blank']
+const DISPLAY_LABELS = ['双语', '英文', '中文', '隐藏']
+const displayModeIndex = ref(0)
+const displayMode = computed(() => DISPLAY_MODES[displayModeIndex.value])
+const displayModeLabel = computed(() => DISPLAY_LABELS[displayModeIndex.value])
+
+function cycleDisplayMode() {
+  displayModeIndex.value = (displayModeIndex.value + 1) % DISPLAY_MODES.length
+}
 
 let videoContext = null
 
@@ -161,4 +182,12 @@ function goBack() {
 }
 .ctrl-btn { font-size: 40rpx; color: #444; }
 .ctrl-btn.large { font-size: 56rpx; }
+.blank-bars { padding: 6rpx 0; }
+.grey-bar { height: 28rpx; background: #e0e0e0; border-radius: 6rpx; margin-bottom: 10rpx; }
+.grey-bar.long { width: 80%; }
+.grey-bar.short { width: 50%; }
+.mode-btn {
+  font-size: 26rpx; background: #f0f0f0;
+  padding: 8rpx 20rpx; border-radius: 20rpx; color: #555;
+}
 </style>
