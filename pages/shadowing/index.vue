@@ -90,6 +90,7 @@ import { onLoad } from '@dcloudio/uni-app'
 import { getSubtitleLines } from '../../services/videoService.js'
 import { VIDEOS } from '../../data/videos.js'
 import { startRecording, stopRecording, playAudio } from '../../services/recordingService.js'
+import { scorePronunciation } from '../../services/iflytekService.js'
 
 const videoId = ref('')
 const subtitleId = ref('')
@@ -159,6 +160,10 @@ async function toggleRecord() {
       const filePath = await pendingRecording
       recordings.value = { ...recordings.value, [activeIndex.value]: filePath }
       await playAudio(filePath)
+      const line = subtitleLines.value[activeIndex.value]
+      scorePronunciation(filePath, line.english)
+        .then(score => { scores.value = { ...scores.value, [activeIndex.value]: score } })
+        .catch(() => { scores.value = { ...scores.value, [activeIndex.value]: 0 } })
     } finally {
       isBusy.value = false
     }
