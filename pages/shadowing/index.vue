@@ -43,8 +43,8 @@
               <text class="action-label">听示范</text>
             </view>
             <view
-              :class="['action-btn', 'record-btn', { recording: isRecording }]"
-              @click.stop="toggleRecord"
+              :class="['action-btn', 'record-btn', { recording: isRecording, disabled: isBusy }]"
+              @click.stop="!isBusy && toggleRecord()"
             >
               <text class="action-icon record-icon">🎤</text>
               <text class="action-label">{{ isRecording ? '停止' : '点击跟读' }}</text>
@@ -96,11 +96,13 @@ const subtitleId = ref('')
 const activeIndex = ref(0)
 const subtitleLines = ref([])
 const isRecording = ref(false)
+const isBusy = ref(false)
 const recordings = ref({})   // lineIndex → tempFilePath
 const scores = ref({})       // lineIndex → 0-100 (populated by Task 11)
 
 let videoContext = null
 let pendingRecording = null  // promise from startRecording()
+let listenTimer = null
 
 const videoUrl = computed(() => VIDEOS.find(v => v.id === videoId.value)?.videoUrl ?? '')
 
@@ -119,6 +121,10 @@ function seekToActive() {
 }
 
 function setActiveLine(i) {
+  if (listenTimer !== null) {
+    clearTimeout(listenTimer)
+    listenTimer = null
+  }
   activeIndex.value = i
   seekToActive()
 }
@@ -130,19 +136,32 @@ function previewLine() {
 function listenOriginal() {
   const line = subtitleLines.value[activeIndex.value]
   if (!line || !videoContext) return
+  if (listenTimer !== null) {
+    clearTimeout(listenTimer)
+    listenTimer = null
+  }
   videoContext.seek(line.startTime / 1000)
   videoContext.play()
-  setTimeout(() => videoContext.pause(), line.endTime - line.startTime)
+  const duration = line.endTime - line.startTime
+  listenTimer = setTimeout(() => {
+    videoContext.pause()
+    listenTimer = null
+  }, duration)
 }
 
 async function toggleRecord() {
+  if (isBusy.value) return
   if (isRecording.value) {
+    isBusy.value = true
     isRecording.value = false
     stopRecording()
-    const filePath = await pendingRecording
-    recordings.value = { ...recordings.value, [activeIndex.value]: filePath }
-    await playAudio(filePath)
-    // scores populated in Task 11 — leave null for now
+    try {
+      const filePath = await pendingRecording
+      recordings.value = { ...recordings.value, [activeIndex.value]: filePath }
+      await playAudio(filePath)
+    } finally {
+      isBusy.value = false
+    }
   } else {
     isRecording.value = true
     pendingRecording = startRecording()
