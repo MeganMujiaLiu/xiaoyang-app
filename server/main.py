@@ -26,6 +26,9 @@ app.include_router(videos.router, prefix="/api/videos")
 from routers import subtitles
 app.include_router(subtitles.router, prefix="/api/subtitles")
 
+from routers import score
+app.include_router(score.router, prefix="/api/score")
+
 @app.get("/health")
 def health():
     return {"status": "ok"}
