@@ -23,6 +23,9 @@ app.mount("/videos", StaticFiles(directory=BASE_DIR / "static" / "videos"), name
 from routers import videos
 app.include_router(videos.router, prefix="/api/videos")
 
+from routers import subtitles
+app.include_router(subtitles.router, prefix="/api/subtitles")
+
 @app.get("/health")
 def health():
     return {"status": "ok"}
