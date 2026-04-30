@@ -7,7 +7,10 @@ export async function scorePronunciation(audioFilePath, referenceText) {
       url: `${API_BASE}/api/score`,
       method: 'POST',
       data: { audio: base64Audio, text: referenceText },
-      success: res => resolve(res.data.score),
+      success: res => {
+        if (res.statusCode >= 200 && res.statusCode < 300) resolve(res.data.score)
+        else reject(new Error(`HTTP ${res.statusCode}`))
+      },
       fail: e => reject(new Error(e.errMsg || 'Scoring request failed'))
     })
   })

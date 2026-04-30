@@ -85,15 +85,15 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 import { onLoad } from '@dcloudio/uni-app'
 import { getSubtitleLines } from '../../services/videoService.js'
-import { VIDEOS } from '../../data/videos.js'
 import { startRecording, stopRecording, playAudio } from '../../services/recordingService.js'
 import { scorePronunciation } from '../../services/iflytekService.js'
 
 const videoId = ref('')
 const subtitleId = ref('')
+const videoUrl = ref('')
 const activeIndex = ref(0)
 const subtitleLines = ref([])
 const isRecording = ref(false)
@@ -105,11 +105,10 @@ let videoContext = null
 let pendingRecording = null  // promise from startRecording()
 let listenTimer = null
 
-const videoUrl = computed(() => VIDEOS.find(v => v.id === videoId.value)?.videoUrl ?? '')
-
 onLoad(async options => {
   videoId.value = options.videoId
   subtitleId.value = options.subtitleId
+  videoUrl.value = decodeURIComponent(options.videoUrl || '')
   activeIndex.value = parseInt(options.lineIndex) || 0
   subtitleLines.value = await getSubtitleLines(subtitleId.value)
   videoContext = uni.createVideoContext('shadow-video')

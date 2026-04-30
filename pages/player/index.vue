@@ -101,10 +101,10 @@
 import { ref, computed, onMounted } from 'vue'
 import { onLoad } from '@dcloudio/uni-app'
 import { getSubtitleLines } from '../../services/videoService.js'
-import { VIDEOS } from '../../data/videos.js'
 
 const videoId = ref('')
 const subtitleId = ref('')
+const videoUrl = ref('')
 const subtitleLines = ref([])
 const currentLineIndex = ref(0)
 const playing = ref(false)
@@ -157,6 +157,7 @@ let videoContext = null
 onLoad(options => {
   videoId.value = options.videoId
   subtitleId.value = options.subtitleId
+  videoUrl.value = decodeURIComponent(options.videoUrl || '')
 })
 
 onMounted(async () => {
@@ -167,9 +168,7 @@ onMounted(async () => {
   videoContext = uni.createVideoContext('main-video')
 })
 
-const currentVideo = computed(() => VIDEOS.find(v => v.id === videoId.value))
-const videoTitle = computed(() => currentVideo.value?.title ?? '')
-const videoUrl = computed(() => currentVideo.value?.videoUrl ?? '')
+const videoTitle = computed(() => videoId.value)
 const currentLine = computed(() => subtitleLines.value[currentLineIndex.value] ?? null)
 
 function onTimeUpdate(e) {
@@ -231,7 +230,7 @@ function goBack() {
 function goToShadowing() {
   videoContext.pause()
   uni.navigateTo({
-    url: `/pages/shadowing/index?videoId=${videoId.value}&subtitleId=${subtitleId.value}&lineIndex=${currentLineIndex.value}`
+    url: `/pages/shadowing/index?videoId=${videoId.value}&subtitleId=${subtitleId.value}&lineIndex=${currentLineIndex.value}&videoUrl=${encodeURIComponent(videoUrl.value)}`
   })
 }
 </script>

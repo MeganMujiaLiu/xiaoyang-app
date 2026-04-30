@@ -10,6 +10,8 @@ import httpx
 def score_pronunciation(base64_audio: str, reference_text: str) -> int:
     appid = os.getenv("IFLYTEK_APPID")
     api_key = os.getenv("IFLYTEK_API_KEY")
+    if not appid or not api_key:
+        raise ValueError("IFLYTEK_APPID and IFLYTEK_API_KEY must be set")
     cur_time = str(int(time.time()))
 
     param = {
@@ -24,20 +26,15 @@ def score_pronunciation(base64_audio: str, reference_text: str) -> int:
 
     response = httpx.post(
         "https://ise-api.xfyun.cn/v2/open-ise",
-        data={
-            "auf": "audio/L16;rate=16000",
-            "aue": "lame",
-            "engine_type": "en_us-ise",
-            "text": reference_text,
-            "audio": base64_audio
-        },
+        data={"text": reference_text, "audio": base64_audio},
         headers={
             "Content-Type": "application/x-www-form-urlencoded",
             "X-Appid": appid,
             "X-CurTime": cur_time,
             "X-Param": param_base64,
             "X-CheckSum": checksum
-        }
+        },
+        timeout=10
     )
     return _extract_score(response.json())
 

@@ -4,6 +4,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from dotenv import load_dotenv
+from routers import videos, subtitles, score
 
 load_dotenv()
 
@@ -20,13 +21,8 @@ app.add_middleware(
 
 app.mount("/videos", StaticFiles(directory=BASE_DIR / "static" / "videos"), name="videos")
 
-from routers import videos
 app.include_router(videos.router, prefix="/api/videos")
-
-from routers import subtitles
 app.include_router(subtitles.router, prefix="/api/subtitles")
-
-from routers import score
 app.include_router(score.router, prefix="/api/score")
 
 @app.get("/health")
