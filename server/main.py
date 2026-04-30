@@ -1,5 +1,5 @@
-# server/main.py
 import os
+import pathlib
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
@@ -7,16 +7,18 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+BASE_DIR = pathlib.Path(__file__).parent
+
 app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["*"],  # TODO: tighten in production via CORS_ORIGINS env var
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-app.mount("/videos", StaticFiles(directory="static/videos"), name="videos")
+app.mount("/videos", StaticFiles(directory=BASE_DIR / "static" / "videos"), name="videos")
 
 @app.get("/health")
 def health():
