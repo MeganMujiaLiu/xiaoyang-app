@@ -20,6 +20,9 @@ app.add_middleware(
 
 app.mount("/videos", StaticFiles(directory=BASE_DIR / "static" / "videos"), name="videos")
 
+from routers import videos
+app.include_router(videos.router, prefix="/api/videos")
+
 @app.get("/health")
 def health():
     return {"status": "ok"}
