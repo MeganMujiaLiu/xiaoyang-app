@@ -1,0 +1,1388 @@
+[
+  {
+    "index": 1,
+    "startTime": 63992,
+    "endTime": 64893,
+    "english": "Episode One",
+    "chinese": "第一集"
+  },
+  {
+    "index": 2,
+    "startTime": 64992,
+    "endTime": 68259,
+    "english": "Monkey King was Born",
+    "chinese": "猴王出世"
+  },
+  {
+    "index": 3,
+    "startTime": 68359,
+    "endTime": 71625,
+    "english": "Sea",
+    "chinese": "海"
+  },
+  {
+    "index": 4,
+    "startTime": 71725,
+    "endTime": 74992,
+    "english": "Sea",
+    "chinese": "海"
+  },
+  {
+    "index": 5,
+    "startTime": 75091,
+    "endTime": 79693,
+    "english": "The sea is shaking wildly.",
+    "chinese": "大海在剧烈地翻腾。"
+  },
+  {
+    "index": 6,
+    "startTime": 79793,
+    "endTime": 84394,
+    "english": "Lightning",
+    "chinese": "闪电"
+  },
+  {
+    "index": 7,
+    "startTime": 84494,
+    "endTime": 89096,
+    "english": "Crane",
+    "chinese": "仙鹤"
+  },
+  {
+    "index": 8,
+    "startTime": 89196,
+    "endTime": 93798,
+    "english": "Crane",
+    "chinese": "仙鹤"
+  },
+  {
+    "index": 9,
+    "startTime": 93897,
+    "endTime": 99284,
+    "english": "One，two, two cranes.",
+    "chinese": "一，二，两只仙鹤。"
+  },
+  {
+    "index": 10,
+    "startTime": 99384,
+    "endTime": 104770,
+    "english": "Mountain",
+    "chinese": "山"
+  },
+  {
+    "index": 11,
+    "startTime": 104870,
+    "endTime": 111562,
+    "english": "The Flower and Fruit Mountain",
+    "chinese": "花果山"
+  },
+  {
+    "index": 12,
+    "startTime": 111662,
+    "endTime": 118353,
+    "english": "Rock",
+    "chinese": "石头"
+  },
+  {
+    "index": 13,
+    "startTime": 118453,
+    "endTime": 123756,
+    "english": "A large rock",
+    "chinese": "一块大石头"
+  },
+  {
+    "index": 14,
+    "startTime": 123855,
+    "endTime": 134058,
+    "english": "The large rock is on the mountain top.",
+    "chinese": "那块大石头坐落于山顶之上。"
+  },
+  {
+    "index": 15,
+    "startTime": 134158,
+    "endTime": 144360,
+    "english": "Palace",
+    "chinese": "宫殿"
+  },
+  {
+    "index": 16,
+    "startTime": 144460,
+    "endTime": 149540,
+    "english": "Cloud Palace",
+    "chinese": "灵霄宝殿"
+  },
+  {
+    "index": 17,
+    "startTime": 149640,
+    "endTime": 153823,
+    "english": "They are having a music party.",
+    "chinese": "他们正在举办一场音乐盛会。"
+  },
+  {
+    "index": 18,
+    "startTime": 153923,
+    "endTime": 157764,
+    "english": "The girl is playing the flute.",
+    "chinese": "那位女子正在吹笛子。"
+  },
+  {
+    "index": 19,
+    "startTime": 157864,
+    "endTime": 161015,
+    "english": "Jade Emperor",
+    "chinese": "玉皇大帝"
+  },
+  {
+    "index": 20,
+    "startTime": 161115,
+    "endTime": 164266,
+    "english": "Crack!",
+    "chinese": "咔嚓！"
+  },
+  {
+    "index": 21,
+    "startTime": 164366,
+    "endTime": 168572,
+    "english": "The rock cracked open!",
+    "chinese": "石头裂开了！"
+  },
+  {
+    "index": 22,
+    "startTime": 168672,
+    "endTime": 172878,
+    "english": "Guard!",
+    "chinese": "侍卫！"
+  },
+  {
+    "index": 23,
+    "startTime": 172978,
+    "endTime": 179742,
+    "english": "Wow! A monkey! It’s a monkey!",
+    "chinese": "哇！一只猴子！是一只猴子！"
+  },
+  {
+    "index": 24,
+    "startTime": 179842,
+    "endTime": 180493,
+    "english": "Your Majesty!",
+    "chinese": "陛下"
+  },
+  {
+    "index": 25,
+    "startTime": 180593,
+    "endTime": 181243,
+    "english": "Your Majesty!",
+    "chinese": "陛下"
+  },
+  {
+    "index": 26,
+    "startTime": 181343,
+    "endTime": 187808,
+    "english": "I heard a strange sound. Find out what happened.",
+    "chinese": "我听见一声异响，去探明情况。"
+  },
+  {
+    "index": 27,
+    "startTime": 187908,
+    "endTime": 195254,
+    "english": "Let me see.",
+    "chinese": "让我瞧瞧。"
+  },
+  {
+    "index": 28,
+    "startTime": 195354,
+    "endTime": 208658,
+    "english": "Let me see.",
+    "chinese": "让我瞧瞧。"
+  },
+  {
+    "index": 29,
+    "startTime": 208758,
+    "endTime": 210640,
+    "english": "Golden light",
+    "chinese": "金光闪闪"
+  },
+  {
+    "index": 30,
+    "startTime": 210740,
+    "endTime": 215144,
+    "english": "A stone monkey was born.",
+    "chinese": "一只石猴出生了。"
+  },
+  {
+    "index": 31,
+    "startTime": 215243,
+    "endTime": 216844,
+    "english": "Just a monkey?",
+    "chinese": "只是一只猴子？"
+  },
+  {
+    "index": 32,
+    "startTime": 216944,
+    "endTime": 237835,
+    "english": "I was born!",
+    "chinese": "我出生啦！"
+  },
+  {
+    "index": 33,
+    "startTime": 237935,
+    "endTime": 240836,
+    "english": "Master, the monkey was born.",
+    "chinese": "师傅，那猴子出世了。"
+  },
+  {
+    "index": 34,
+    "startTime": 240936,
+    "endTime": 242617,
+    "english": "I see.",
+    "chinese": "我知道了。"
+  },
+  {
+    "index": 35,
+    "startTime": 242717,
+    "endTime": 247780,
+    "english": "The monkey will come to find me. Let’s go home!",
+    "chinese": "那猴子日后会来找我。我们先回去吧！"
+  },
+  {
+    "index": 36,
+    "startTime": 247879,
+    "endTime": 259836,
+    "english": "Help! Hhh Help! Hhh Help! Help!",
+    "chinese": "救命啊！救命啊！救命啊！救命啊！"
+  },
+  {
+    "index": 37,
+    "startTime": 259936,
+    "endTime": 271892,
+    "english": "I’m coming!",
+    "chinese": "我来啦！"
+  },
+  {
+    "index": 38,
+    "startTime": 271992,
+    "endTime": 276454,
+    "english": "Oh! Come on! Faster! Faster! Faster!",
+    "chinese": "啊！快啊！快点儿！快点儿！再快点儿！"
+  },
+  {
+    "index": 39,
+    "startTime": 276555,
+    "endTime": 281016,
+    "english": "Oh! Dizzy!",
+    "chinese": "哦！好晕啊！"
+  },
+  {
+    "index": 40,
+    "startTime": 281117,
+    "endTime": 287713,
+    "english": "Catch me! Catch me! Hahaha",
+    "chinese": "来抓我呀！来抓我呀！哈哈哈"
+  },
+  {
+    "index": 41,
+    "startTime": 287813,
+    "endTime": 294410,
+    "english": "I'm here!",
+    "chinese": "我在这儿呢！"
+  },
+  {
+    "index": 42,
+    "startTime": 294510,
+    "endTime": 301106,
+    "english": "Hahaha! Idiot!",
+    "chinese": "哈哈哈！笨蛋！"
+  },
+  {
+    "index": 43,
+    "startTime": 301206,
+    "endTime": 301326,
+    "english": "Come down!",
+    "chinese": "下来呀！"
+  },
+  {
+    "index": 44,
+    "startTime": 301427,
+    "endTime": 308695,
+    "english": "Great! Great! Great! Great! Great!",
+    "chinese": "太厉害啦！太厉害啦！太厉害啦！太厉害啦！太厉害啦！"
+  },
+  {
+    "index": 45,
+    "startTime": 308795,
+    "endTime": 316064,
+    "english": "Flattered! I’m Flattered!",
+    "chinese": "过奖！ 过奖！"
+  },
+  {
+    "index": 46,
+    "startTime": 316164,
+    "endTime": 323433,
+    "english": "Awesome! Awesome! Awesome!",
+    "chinese": "太了不起啦！太了不起啦！太了不起啦！"
+  },
+  {
+    "index": 47,
+    "startTime": 323533,
+    "endTime": 330801,
+    "english": "I am Hou Xiaomei. You should be our king!",
+    "chinese": "我是猴小妹。你应当做我们的大王！"
+  },
+  {
+    "index": 48,
+    "startTime": 330901,
+    "endTime": 333662,
+    "english": "King? Monkey King?",
+    "chinese": "大王？猴王？"
+  },
+  {
+    "index": 49,
+    "startTime": 333762,
+    "endTime": 337745,
+    "english": "Yes, you are the best!",
+    "chinese": "没错，你是最厉害的！"
+  },
+  {
+    "index": 50,
+    "startTime": 337845,
+    "endTime": 343086,
+    "english": "Behind the waterfall, there is a magic cave.",
+    "chinese": "瀑布后面，有一个仙洞。"
+  },
+  {
+    "index": 51,
+    "startTime": 343187,
+    "endTime": 347088,
+    "english": "No one ever got in...",
+    "chinese": "从来没有人进去过……"
+  },
+  {
+    "index": 52,
+    "startTime": 347189,
+    "endTime": 349870,
+    "english": "Let me have a try!",
+    "chinese": "让我来试试！"
+  },
+  {
+    "index": 53,
+    "startTime": 349970,
+    "endTime": 351790,
+    "english": "No one ever got in?",
+    "chinese": "从来没人进去过吗？"
+  },
+  {
+    "index": 54,
+    "startTime": 351891,
+    "endTime": 359772,
+    "english": "No one， no.",
+    "chinese": "没人能进去，从来没有。"
+  },
+  {
+    "index": 55,
+    "startTime": 359872,
+    "endTime": 364476,
+    "english": "Whoever finds the cave will be our king.",
+    "chinese": "谁能找到那个洞穴，谁就当我们的大王。"
+  },
+  {
+    "index": 56,
+    "startTime": 364576,
+    "endTime": 380411,
+    "english": "He is too fat. Maybe I can do it!",
+    "chinese": "他太胖了。或许我能做到！"
+  },
+  {
+    "index": 57,
+    "startTime": 380511,
+    "endTime": 386495,
+    "english": "One, two, one. Ah…",
+    "chinese": "一，二，一。啊……"
+  },
+  {
+    "index": 58,
+    "startTime": 386596,
+    "endTime": 391094,
+    "english": "Oh, no！",
+    "chinese": "哦，不好！"
+  },
+  {
+    "index": 59,
+    "startTime": 391194,
+    "endTime": 392674,
+    "english": "Save him!",
+    "chinese": "快救他！"
+  },
+  {
+    "index": 60,
+    "startTime": 392774,
+    "endTime": 396036,
+    "english": "Got him!",
+    "chinese": "抓住他了！"
+  },
+  {
+    "index": 61,
+    "startTime": 396136,
+    "endTime": 398976,
+    "english": "Looks like no one can do it!",
+    "chinese": "看来没人能办得到了！"
+  },
+  {
+    "index": 62,
+    "startTime": 399076,
+    "endTime": 400476,
+    "english": "I can!",
+    "chinese": "我能行！"
+  },
+  {
+    "index": 63,
+    "startTime": 400576,
+    "endTime": 401876,
+    "english": "Who is it?",
+    "chinese": "是谁呀？"
+  },
+  {
+    "index": 64,
+    "startTime": 401976,
+    "endTime": 403997,
+    "english": "He is the best!",
+    "chinese": "他最厉害啦！"
+  },
+  {
+    "index": 65,
+    "startTime": 404098,
+    "endTime": 416211,
+    "english": "Are you sure? It’s no joke. It’s dangerous!",
+    "chinese": "你确定吗？这可不是玩笑。太危险了！"
+  },
+  {
+    "index": 66,
+    "startTime": 416311,
+    "endTime": 428423,
+    "english": "I am sure! I can do it! Watch me!",
+    "chinese": "我确定！我能做到！看我的！"
+  },
+  {
+    "index": 67,
+    "startTime": 428524,
+    "endTime": 440637,
+    "english": "Look!",
+    "chinese": "快看！"
+  },
+  {
+    "index": 68,
+    "startTime": 440737,
+    "endTime": 444121,
+    "english": "Yes! Yes!",
+    "chinese": "太好了！成功啦！"
+  },
+  {
+    "index": 69,
+    "startTime": 444221,
+    "endTime": 465450,
+    "english": "Wow! A magic cave!",
+    "chinese": "哇！好一个仙洞！"
+  },
+  {
+    "index": 70,
+    "startTime": 465550,
+    "endTime": 504409,
+    "english": "Flower and Fruit Mountain, Water Curtain Cave.",
+    "chinese": "花果山福地，水帘洞洞天。"
+  },
+  {
+    "index": 71,
+    "startTime": 504509,
+    "endTime": 508110,
+    "english": "Come down! Come down!",
+    "chinese": "下来呀！下来呀！"
+  },
+  {
+    "index": 72,
+    "startTime": 508211,
+    "endTime": 512111,
+    "english": "We finally have a new king. This is wonderful!",
+    "chinese": "我们终于有新大王了。这太棒了！"
+  },
+  {
+    "index": 73,
+    "startTime": 512211,
+    "endTime": 516274,
+    "english": "Huh? Where is our new king?",
+    "chinese": "咦？我们的新大王在哪儿？"
+  },
+  {
+    "index": 74,
+    "startTime": 516374,
+    "endTime": 518224,
+    "english": "Come down! Come down!",
+    "chinese": "下来呀！下来呀！"
+  },
+  {
+    "index": 75,
+    "startTime": 518324,
+    "endTime": 520174,
+    "english": "What’s up? What is it?",
+    "chinese": "怎么了？有什么事？"
+  },
+  {
+    "index": 76,
+    "startTime": 520274,
+    "endTime": 523156,
+    "english": "We want you to be our king!",
+    "chinese": "我们想让你做我们的大王！"
+  },
+  {
+    "index": 77,
+    "startTime": 523256,
+    "endTime": 526137,
+    "english": "Monkey king! Handsome Monkey King!",
+    "chinese": "猴王！美猴王！"
+  },
+  {
+    "index": 78,
+    "startTime": 526237,
+    "endTime": 529118,
+    "english": "No, no, no. Come on, I can’t!",
+    "chinese": "不行，不行，不行。别这样，我可不行！"
+  },
+  {
+    "index": 79,
+    "startTime": 529218,
+    "endTime": 532100,
+    "english": "Eh… OK then!",
+    "chinese": "嗯……那好吧！"
+  },
+  {
+    "index": 80,
+    "startTime": 532200,
+    "endTime": 537263,
+    "english": "To be a good king, you need to learn new skills.",
+    "chinese": "要做一位好大王，你得学习新的本领。"
+  },
+  {
+    "index": 81,
+    "startTime": 537363,
+    "endTime": 538283,
+    "english": "I know a place...",
+    "chinese": "我知道一个地方……"
+  },
+  {
+    "index": 82,
+    "startTime": 538383,
+    "endTime": 540413,
+    "english": "Great! Where?",
+    "chinese": "太好了！在哪儿？"
+  },
+  {
+    "index": 83,
+    "startTime": 540514,
+    "endTime": 542544,
+    "english": "It is very far from here...",
+    "chinese": "那地方离这儿可远了……"
+  },
+  {
+    "index": 84,
+    "startTime": 542644,
+    "endTime": 557531,
+    "english": "Bye, King! Goodbye! Take care!",
+    "chinese": "大王再见！再见！一路保重！"
+  },
+  {
+    "index": 85,
+    "startTime": 557631,
+    "endTime": 559909,
+    "english": "Will he come back?",
+    "chinese": "他还会回来吗？"
+  },
+  {
+    "index": 86,
+    "startTime": 560009,
+    "endTime": 560840,
+    "english": "Of course. He is going to be a great king!",
+    "chinese": "当然会。他将来一定会成为一位伟大的大王！"
+  },
+  {
+    "index": 87,
+    "startTime": 560940,
+    "endTime": 561770,
+    "english": "That’s great!",
+    "chinese": "太好了！"
+  },
+  {
+    "index": 88,
+    "startTime": 561870,
+    "endTime": 584198,
+    "english": "To be a good king, you need to learn new skills.",
+    "chinese": "要当一位好大王，你得学新本领。"
+  },
+  {
+    "index": 89,
+    "startTime": 584298,
+    "endTime": 606625,
+    "english": "Don't bother me, okay?",
+    "chinese": "别来烦我，好吗？"
+  },
+  {
+    "index": 90,
+    "startTime": 606725,
+    "endTime": 622868,
+    "english": "We are taking you to see Master.",
+    "chinese": "我们带你去见师傅。"
+  },
+  {
+    "index": 91,
+    "startTime": 622968,
+    "endTime": 639110,
+    "english": "Don’t be naughty!",
+    "chinese": "别淘气！"
+  },
+  {
+    "index": 92,
+    "startTime": 639210,
+    "endTime": 641250,
+    "english": "Master! Master!",
+    "chinese": "师傅！师傅！"
+  },
+  {
+    "index": 93,
+    "startTime": 641350,
+    "endTime": 641971,
+    "english": "Hehe. I am not Master.",
+    "chinese": "呵呵。我不是师傅。"
+  },
+  {
+    "index": 94,
+    "startTime": 642071,
+    "endTime": 642691,
+    "english": "Master！",
+    "chinese": "师傅！"
+  },
+  {
+    "index": 95,
+    "startTime": 642791,
+    "endTime": 652264,
+    "english": "Master！Master！",
+    "chinese": "师傅！ 师傅！"
+  },
+  {
+    "index": 96,
+    "startTime": 652364,
+    "endTime": 661837,
+    "english": "What’s your name?",
+    "chinese": "你叫什么名字？"
+  },
+  {
+    "index": 97,
+    "startTime": 661937,
+    "endTime": 663388,
+    "english": "No name.",
+    "chinese": "我没有名字。"
+  },
+  {
+    "index": 98,
+    "startTime": 663488,
+    "endTime": 665792,
+    "english": "Who are your parents?",
+    "chinese": "你父母是谁？"
+  },
+  {
+    "index": 99,
+    "startTime": 665892,
+    "endTime": 667380,
+    "english": "No parents.",
+    "chinese": "我没有父母。"
+  },
+  {
+    "index": 100,
+    "startTime": 667480,
+    "endTime": 668968,
+    "english": "How were you born?",
+    "chinese": "你是怎么出生的？"
+  },
+  {
+    "index": 101,
+    "startTime": 669068,
+    "endTime": 670556,
+    "english": "I came out of a rock.",
+    "chinese": "我是从石头里蹦出来的。"
+  },
+  {
+    "index": 102,
+    "startTime": 670656,
+    "endTime": 672144,
+    "english": "You’re honest.",
+    "chinese": "你还很诚实。"
+  },
+  {
+    "index": 103,
+    "startTime": 672245,
+    "endTime": 674687,
+    "english": "Yes, I am a stone monkey.",
+    "chinese": "没错，我是石猴。"
+  },
+  {
+    "index": 104,
+    "startTime": 674787,
+    "endTime": 676347,
+    "english": "Why are you here?",
+    "chinese": "你为什么在这儿？"
+  },
+  {
+    "index": 105,
+    "startTime": 676447,
+    "endTime": 678188,
+    "english": "I want to learn skills.",
+    "chinese": "我想学本领。"
+  },
+  {
+    "index": 106,
+    "startTime": 678288,
+    "endTime": 680370,
+    "english": "Why do you want to learn skills?",
+    "chinese": "你为什么要学本领呢？"
+  },
+  {
+    "index": 107,
+    "startTime": 680471,
+    "endTime": 682151,
+    "english": "To fight the demons!",
+    "chinese": "为了打妖怪！"
+  },
+  {
+    "index": 108,
+    "startTime": 682251,
+    "endTime": 686635,
+    "english": "Fighting skills? I won’t teach you that. Go away!",
+    "chinese": "打架的本领？我可不能教你。你回去吧！"
+  },
+  {
+    "index": 109,
+    "startTime": 686735,
+    "endTime": 688957,
+    "english": "Please, just teach me! I won’t go away!",
+    "chinese": "求求您了，就教我吧！我不会离开的！"
+  },
+  {
+    "index": 110,
+    "startTime": 689057,
+    "endTime": 691279,
+    "english": "Leave!",
+    "chinese": "快走！"
+  },
+  {
+    "index": 111,
+    "startTime": 691379,
+    "endTime": 693600,
+    "english": "I’m not leaving!",
+    "chinese": "我不走！"
+  },
+  {
+    "index": 112,
+    "startTime": 693701,
+    "endTime": 695501,
+    "english": "Throw him out!",
+    "chinese": "把他赶出去！"
+  },
+  {
+    "index": 113,
+    "startTime": 695601,
+    "endTime": 698529,
+    "english": "Get lost, now!",
+    "chinese": "赶紧走开！"
+  },
+  {
+    "index": 114,
+    "startTime": 698629,
+    "endTime": 701557,
+    "english": "Sea",
+    "chinese": "海"
+  },
+  {
+    "index": 115,
+    "startTime": 701657,
+    "endTime": 704525,
+    "english": "The sea is shaking wildly.",
+    "chinese": "大海在剧烈地翻腾。"
+  },
+  {
+    "index": 116,
+    "startTime": 704625,
+    "endTime": 707493,
+    "english": "Lightning",
+    "chinese": "闪电"
+  },
+  {
+    "index": 117,
+    "startTime": 707593,
+    "endTime": 710461,
+    "english": "Lightning",
+    "chinese": "闪电"
+  },
+  {
+    "index": 118,
+    "startTime": 710561,
+    "endTime": 713429,
+    "english": "It is flashing brightly.",
+    "chinese": "电光闪耀。"
+  },
+  {
+    "index": 119,
+    "startTime": 713529,
+    "endTime": 716397,
+    "english": "The stone monkey is sitting in the rain.",
+    "chinese": "石猴正坐在雨中。"
+  },
+  {
+    "index": 120,
+    "startTime": 716497,
+    "endTime": 719365,
+    "english": "Disciple.",
+    "chinese": "徒儿。"
+  },
+  {
+    "index": 121,
+    "startTime": 719466,
+    "endTime": 721766,
+    "english": "Yes, Master.",
+    "chinese": "师傅，弟子在。"
+  },
+  {
+    "index": 122,
+    "startTime": 721866,
+    "endTime": 723388,
+    "english": "That monkey?",
+    "chinese": "那只猴子？"
+  },
+  {
+    "index": 123,
+    "startTime": 723488,
+    "endTime": 727639,
+    "english": "That monkey is sitting in the rain.",
+    "chinese": "那只猴子正坐在雨里呢。"
+  },
+  {
+    "index": 124,
+    "startTime": 727739,
+    "endTime": 731890,
+    "english": "Not bad!",
+    "chinese": "不错！"
+  },
+  {
+    "index": 125,
+    "startTime": 731990,
+    "endTime": 736913,
+    "english": "Cold night, heavy snow.",
+    "chinese": "寒夜漫漫，大雪纷飞。"
+  },
+  {
+    "index": 126,
+    "startTime": 737013,
+    "endTime": 742916,
+    "english": "The poor little monkey has changed into a snow monkey.",
+    "chinese": "那可怜的小猴儿变成了一只雪猴。"
+  },
+  {
+    "index": 127,
+    "startTime": 743016,
+    "endTime": 748918,
+    "english": "It’s so cold!",
+    "chinese": "天气可真冷！"
+  },
+  {
+    "index": 128,
+    "startTime": 749019,
+    "endTime": 756381,
+    "english": "Hey! Get up！ Master wants to see you.",
+    "chinese": "嘿！起来！师傅要见你。"
+  },
+  {
+    "index": 129,
+    "startTime": 756481,
+    "endTime": 761682,
+    "english": "Master, Master. That monkey is frozen.",
+    "chinese": "师傅，师傅。那只猴子冻僵了。"
+  },
+  {
+    "index": 130,
+    "startTime": 761783,
+    "endTime": 773074,
+    "english": "Let me take a look.",
+    "chinese": "让我瞧瞧。"
+  },
+  {
+    "index": 131,
+    "startTime": 773174,
+    "endTime": 775938,
+    "english": "You can be my disciple.",
+    "chinese": "你可以做我的徒弟了。"
+  },
+  {
+    "index": 132,
+    "startTime": 776038,
+    "endTime": 781255,
+    "english": "Disciple, I will name you, Sun Wukong.",
+    "chinese": "徒儿，为师给你取个名字，就叫孙悟空吧。"
+  },
+  {
+    "index": 133,
+    "startTime": 781355,
+    "endTime": 784058,
+    "english": "Thank you, Master! I like this name!",
+    "chinese": "谢谢师傅！我喜欢这个名字！"
+  },
+  {
+    "index": 134,
+    "startTime": 784158,
+    "endTime": 786360,
+    "english": "Wukong, what do you want to learn?",
+    "chinese": "悟空，你想学些什么本事？"
+  },
+  {
+    "index": 135,
+    "startTime": 786461,
+    "endTime": 788021,
+    "english": "I have no idea, Master.",
+    "chinese": "徒儿不知，全凭师傅安排。"
+  },
+  {
+    "index": 136,
+    "startTime": 788121,
+    "endTime": 791264,
+    "english": "You can learn from Buddhist scriptures.",
+    "chinese": "教你看经念佛如何？"
+  },
+  {
+    "index": 137,
+    "startTime": 791365,
+    "endTime": 792446,
+    "english": "No, no, no, no, no.",
+    "chinese": "不要，不要，不要，不要，不要。"
+  },
+  {
+    "index": 138,
+    "startTime": 792546,
+    "endTime": 794727,
+    "english": "How about fortune telling?",
+    "chinese": "那教你卜卦算命怎么样？"
+  },
+  {
+    "index": 139,
+    "startTime": 794827,
+    "endTime": 796429,
+    "english": "No, I don’t like that!",
+    "chinese": "不，我不喜欢这个！"
+  },
+  {
+    "index": 140,
+    "startTime": 796529,
+    "endTime": 798091,
+    "english": "How about meditation?",
+    "chinese": "那教你入定静坐呢？"
+  },
+  {
+    "index": 141,
+    "startTime": 798191,
+    "endTime": 800853,
+    "english": "Meditation? Boring! It’s too boring!",
+    "chinese": "入定静坐？太无聊了！实在是太无聊了！"
+  },
+  {
+    "index": 142,
+    "startTime": 800953,
+    "endTime": 808837,
+    "english": "You naughty monkey! What do you want to learn?",
+    "chinese": "你这猴头！到底想学些什么？"
+  },
+  {
+    "index": 143,
+    "startTime": 808937,
+    "endTime": 811019,
+    "english": "Master is angry with you!",
+    "chinese": "师傅生你气啦！"
+  },
+  {
+    "index": 144,
+    "startTime": 811119,
+    "endTime": 813139,
+    "english": "Sorry, Master. I’m really sorry.",
+    "chinese": "对不起师傅，徒儿真的知道错了。"
+  },
+  {
+    "index": 145,
+    "startTime": 813239,
+    "endTime": 825082,
+    "english": "Wukong, why are you here?",
+    "chinese": "悟空，你怎么会在这儿？"
+  },
+  {
+    "index": 146,
+    "startTime": 825182,
+    "endTime": 827943,
+    "english": "Master, you told me to come here!",
+    "chinese": "师傅，是您让我到这儿来的呀！"
+  },
+  {
+    "index": 147,
+    "startTime": 828043,
+    "endTime": 830365,
+    "english": "No, I didn’t.",
+    "chinese": "我没有让你来。"
+  },
+  {
+    "index": 148,
+    "startTime": 830465,
+    "endTime": 833985,
+    "english": "Master, you tapped my head three times.",
+    "chinese": "师傅，您在我头上敲了三下。"
+  },
+  {
+    "index": 149,
+    "startTime": 834086,
+    "endTime": 837187,
+    "english": "You want me to come here at 3!",
+    "chinese": "您是想让我三点来这儿！"
+  },
+  {
+    "index": 150,
+    "startTime": 837288,
+    "endTime": 842389,
+    "english": "You are clever. I will teach you some skills.",
+    "chinese": "哦，你倒是机灵。好吧，我就教你一些法术。"
+  },
+  {
+    "index": 151,
+    "startTime": 842490,
+    "endTime": 844870,
+    "english": "Thank you Master! Thank you Master!",
+    "chinese": "谢谢师傅！谢谢师傅！"
+  },
+  {
+    "index": 152,
+    "startTime": 844971,
+    "endTime": 859312,
+    "english": "Disciple, look carefully. Let me teach you some real skills.",
+    "chinese": "徒儿，你看仔细了。师傅教你些真本领。"
+  },
+  {
+    "index": 153,
+    "startTime": 859413,
+    "endTime": 861256,
+    "english": "Where did you go?",
+    "chinese": "师傅您去哪儿了？"
+  },
+  {
+    "index": 154,
+    "startTime": 861356,
+    "endTime": 864983,
+    "english": "Look, this is from your Flower and Fruit mountain.",
+    "chinese": "瞧，此物来自你的花果山。"
+  },
+  {
+    "index": 155,
+    "startTime": 865083,
+    "endTime": 871457,
+    "english": "Flower and Fruit Mountain? It’s very far!",
+    "chinese": "花果山？那可远着呢！"
+  },
+  {
+    "index": 156,
+    "startTime": 871557,
+    "endTime": 879061,
+    "english": "This is called Somersault Cloud.",
+    "chinese": "这 是 被称为 筋斗 云"
+  },
+  {
+    "index": 157,
+    "startTime": 879161,
+    "endTime": 886664,
+    "english": "One somersault, fifty-four thousands kilometers. Follow me!",
+    "chinese": "这叫筋斗云。一个筋斗能翻十万八千里。跟着我！"
+  },
+  {
+    "index": 158,
+    "startTime": 886764,
+    "endTime": 892165,
+    "english": "Sun Wukong studied very hard.",
+    "chinese": "孙悟空学习十分刻苦。"
+  },
+  {
+    "index": 159,
+    "startTime": 892265,
+    "endTime": 899241,
+    "english": "His master taught him Cloud-Somersault",
+    "chinese": "他的 师傅 教了 他 筋斗云"
+  },
+  {
+    "index": 160,
+    "startTime": 899341,
+    "endTime": 906317,
+    "english": "and seventy-two changes.",
+    "chinese": "师傅将筋斗云和七十二般变化的秘法都传授给了他。"
+  },
+  {
+    "index": 161,
+    "startTime": 906417,
+    "endTime": 909198,
+    "english": "Thank you Master.",
+    "chinese": "谢谢师傅。"
+  },
+  {
+    "index": 162,
+    "startTime": 909298,
+    "endTime": 912311,
+    "english": "Wukong, you have learned real skills.",
+    "chinese": "悟空，你已习得真本领。"
+  },
+  {
+    "index": 163,
+    "startTime": 912411,
+    "endTime": 915423,
+    "english": "It’s time for you to go home.",
+    "chinese": "是时候回家去了。"
+  },
+  {
+    "index": 164,
+    "startTime": 915524,
+    "endTime": 919648,
+    "english": "Go home? No no, I don’t want to leave.",
+    "chinese": "回家？不，不，我不想离开。"
+  },
+  {
+    "index": 165,
+    "startTime": 919748,
+    "endTime": 925294,
+    "english": "Say no more. Go back to the Flower and Fruit mountain.",
+    "chinese": "不必多说。回你的花果山去吧。"
+  },
+  {
+    "index": 166,
+    "startTime": 925394,
+    "endTime": 942242,
+    "english": "Okay! My friends are waiting for me. Goodbye, Master.",
+    "chinese": "好吧！我的朋友们还在等我。师傅再见。"
+  },
+  {
+    "index": 167,
+    "startTime": 942342,
+    "endTime": 942962,
+    "english": "Our king is back! King! King!",
+    "chinese": "我们的大王回来啦！大王！大王！"
+  },
+  {
+    "index": 168,
+    "startTime": 943062,
+    "endTime": 943483,
+    "english": "Our king is back!",
+    "chinese": "我们的大王回来啦！"
+  },
+  {
+    "index": 169,
+    "startTime": 943583,
+    "endTime": 961081,
+    "english": "King! King!",
+    "chinese": "大王！大王！"
+  },
+  {
+    "index": 170,
+    "startTime": 961181,
+    "endTime": 978678,
+    "english": "I miss you all. How have you been?",
+    "chinese": "我好想你们啊。你们一向可好？"
+  },
+  {
+    "index": 171,
+    "startTime": 978778,
+    "endTime": 996275,
+    "english": "Not good! Terrible!",
+    "chinese": "不好！太糟糕了！"
+  },
+  {
+    "index": 172,
+    "startTime": 996375,
+    "endTime": 996973,
+    "english": "The Chaos Demon King always bullied us!",
+    "chinese": "那混世魔王总是欺负我们！"
+  },
+  {
+    "index": 173,
+    "startTime": 997073,
+    "endTime": 997670,
+    "english": "Give me your money or give me your life!",
+    "chinese": "把你们的钱财交出来，否则就取你们的性命！"
+  },
+  {
+    "index": 174,
+    "startTime": 997770,
+    "endTime": 998367,
+    "english": "Kkkkking...",
+    "chinese": "大大王……"
+  },
+  {
+    "index": 175,
+    "startTime": 998467,
+    "endTime": 999064,
+    "english": "What’s wrong?",
+    "chinese": "怎么了？"
+  },
+  {
+    "index": 176,
+    "startTime": 999164,
+    "endTime": 999761,
+    "english": "The monkeys have a new king! He is here!",
+    "chinese": "那些猴子有了新大王！他就在这儿！"
+  },
+  {
+    "index": 177,
+    "startTime": 999861,
+    "endTime": 1000458,
+    "english": "Hah! How dare he?",
+    "chinese": "哈？他好大的胆子！"
+  },
+  {
+    "index": 178,
+    "startTime": 1000558,
+    "endTime": 1011563,
+    "english": "Are you the Monkey King?",
+    "chinese": "你就是那猴王？"
+  },
+  {
+    "index": 179,
+    "startTime": 1011663,
+    "endTime": 1022667,
+    "english": "Who are you?",
+    "chinese": "你是谁？"
+  },
+  {
+    "index": 180,
+    "startTime": 1022767,
+    "endTime": 1033771,
+    "english": "He is the Chaos Demon King. He is powerful!",
+    "chinese": "他就是混世魔王。他可厉害着呢！"
+  },
+  {
+    "index": 181,
+    "startTime": 1033871,
+    "endTime": 1044876,
+    "english": "You little monkey, Watch my sword!",
+    "chinese": "你这小猴子，看刀！"
+  },
+  {
+    "index": 182,
+    "startTime": 1044976,
+    "endTime": 1055980,
+    "english": "Got you! Hahaha!",
+    "chinese": "抓到你了！哈哈哈！"
+  },
+  {
+    "index": 183,
+    "startTime": 1056080,
+    "endTime": 1067084,
+    "english": "I’m the Chaos Demon King! I am powerful!",
+    "chinese": "我乃混世魔王！我最厉害！"
+  },
+  {
+    "index": 184,
+    "startTime": 1067184,
+    "endTime": 1078188,
+    "english": "Where is the monkey?",
+    "chinese": "那猴子去哪儿了？"
+  },
+  {
+    "index": 185,
+    "startTime": 1078288,
+    "endTime": 1089293,
+    "english": "Ah? Where are you?",
+    "chinese": "啊？你在哪儿？"
+  },
+  {
+    "index": 186,
+    "startTime": 1089393,
+    "endTime": 1092865,
+    "english": "Haha, I am here!",
+    "chinese": "哈哈，我在这儿呢！"
+  },
+  {
+    "index": 187,
+    "startTime": 1092965,
+    "endTime": 1096438,
+    "english": "Itchy! Itchy! Haaahhaha",
+    "chinese": "痒！好痒啊！哈哈哈"
+  },
+  {
+    "index": 188,
+    "startTime": 1096538,
+    "endTime": 1100010,
+    "english": "It’s our king！",
+    "chinese": "这是我们的大王！"
+  },
+  {
+    "index": 189,
+    "startTime": 1100110,
+    "endTime": 1103583,
+    "english": "Yes, our king！",
+    "chinese": "是的 我们的 大王"
+  },
+  {
+    "index": 190,
+    "startTime": 1103683,
+    "endTime": 1107155,
+    "english": "Our King!",
+    "chinese": "没错，是我们的大王！"
+  },
+  {
+    "index": 191,
+    "startTime": 1107255,
+    "endTime": 1110728,
+    "english": "Hahahahahahah， Itchy! So itchy!",
+    "chinese": "哈哈哈……痒！太痒了！"
+  },
+  {
+    "index": 192,
+    "startTime": 1110828,
+    "endTime": 1114301,
+    "english": "Leave Flower and Fruit mountain!",
+    "chinese": "离开花果山！"
+  },
+  {
+    "index": 193,
+    "startTime": 1114401,
+    "endTime": 1117873,
+    "english": "Never come back!",
+    "chinese": "永远别再回来！"
+  },
+  {
+    "index": 194,
+    "startTime": 1117973,
+    "endTime": 1121446,
+    "english": "Cheers! Cheers! Cheers! Great King! Great King!",
+    "chinese": "干杯！干杯！干杯！大王万岁！大王万岁！"
+  },
+  {
+    "index": 195,
+    "startTime": 1121546,
+    "endTime": 1125019,
+    "english": "From now on, no one will bully us again!",
+    "chinese": "从现在起，再也没人敢欺负我们了！"
+  },
+  {
+    "index": 196,
+    "startTime": 1125118,
+    "endTime": 1126019,
+    "english": "We are safe for now, but we still need some good weapons.",
+    "chinese": "我们现在暂时安全了，但还需要一些好武器防身。"
+  },
+  {
+    "index": 197,
+    "startTime": 1126118,
+    "endTime": 1127019,
+    "english": "Good weapons? You are right! I’ll go get some!",
+    "chinese": "好武器？你说得对！我这就去寻些来！"
+  },
+  {
+    "index": 198,
+    "startTime": 1127118,
+    "endTime": 1134125,
+    "english": "Bye! Good-bye! Bye! Take care!",
+    "chinese": "再见！再见！再见！保重！"
+  }
+]

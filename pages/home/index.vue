@@ -10,7 +10,7 @@
         class="video-card"
         @click="openVideo(video)"
       >
-        <image :src="video.coverImage" class="cover" mode="aspectFill" />
+        <image :src="video.coverImage || ''" class="cover" mode="aspectFill" />
         <view class="info">
           <text class="video-title">{{ video.title }}</text>
           <text class="duration">{{ formatDuration(video.duration) }}</text>
@@ -34,7 +34,7 @@ onMounted(async () => {
 
 function openVideo(video) {
   uni.navigateTo({
-    url: `/pages/player/index?videoId=${video.id}&subtitleId=${video.subtitleId}`
+    url: `/pages/player/index?videoId=${video.id}&subtitleId=${video.subtitleId}&videoUrl=${encodeURIComponent(video.videoUrl)}`
   })
 }
 

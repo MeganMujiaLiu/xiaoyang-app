@@ -1,20 +1,27 @@
-// Data access layer.
-// Local mode: imports from data/ modules.
-// Server mode (future): replace getVideos() and getSubtitleLines() with API calls only.
-
-import { VIDEOS } from '../data/videos.js'
-import peppaMuddyPuddles from '../data/subtitles/peppa-muddy-puddles.js'
-
-const SUBTITLE_MAP = {
-  'peppa-muddy-puddles': peppaMuddyPuddles
-}
+import { API_BASE } from './config.js'
 
 export async function getVideos() {
-  return VIDEOS
+  return new Promise((resolve, reject) => {
+    uni.request({
+      url: `${API_BASE}/api/videos`,
+      success: res => {
+        if (res.statusCode >= 200 && res.statusCode < 300) resolve(res.data)
+        else reject(new Error(`HTTP ${res.statusCode}`))
+      },
+      fail: e => reject(new Error(e.errMsg || 'Failed to fetch videos'))
+    })
+  })
 }
 
-export async function getSubtitleLines(subtitleId) {
-  const lines = SUBTITLE_MAP[subtitleId]
-  if (!lines) throw new Error(`Subtitle not found: ${subtitleId}`)
-  return lines
+export async function getSubtitleLines(episodeId) {
+  return new Promise((resolve, reject) => {
+    uni.request({
+      url: `${API_BASE}/api/subtitles/${episodeId}`,
+      success: res => {
+        if (res.statusCode >= 200 && res.statusCode < 300) resolve(res.data)
+        else reject(new Error(`HTTP ${res.statusCode}`))
+      },
+      fail: e => reject(new Error(e.errMsg || 'Failed to fetch subtitles'))
+    })
+  })
 }
